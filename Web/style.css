@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+    padding: 0;
+    /*background-color: cadetblue;*/
+}
+
+header img{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    height: 80px;
+    width:193px ;
+}
+
+li img{
+    height: 15px;
+    width: 20px;
+}
+
+ul li{
+    display: inline;
+}
+
+.menu {
+    margin-top: 5px;
+    float: right;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu a{
+    padding:60px;
+    margin-left: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-icon{
+    padding:15px;
+    margin-left: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Book now */
+
+.button a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0.2em 0.5em;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.button a:hover {
+	background-color: black;
+    color: goldenrod;
+    border-color: goldenrod;
+	transition: color 0.5s ease-in-out,
+	            background-color 1s ease-out;
+}
+
+/* Language */
+
+.custom-select{
+    transform: translate(-50%,-50%);
+}
+
+.custom-select select{
+    background-color: transparent;
+    color: white;
+    padding:10px;
+    width: 160px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-select::before {
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    color: white;
+    background-color: none;
+    pointer-events: none;
+}
+  
+.custom-select:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+} 
+  
+.custom-select select option {
+    padding: 30px;
+}
+
+/* side nav */
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+  
+ 
+.sidenav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color:#111;
+}
+  
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #111;
+}
+
+#toggle-night-mode {
+    position: relative;
+    bottom:-13em;
+    left: 3em;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color:goldenrod;
+    color: black;
+    cursor: pointer;
+}
+
+#toggle-night-mode:hover{
+    background-color: white;
+    color: black;
+}
+
+
+body.night-mode{
+    background-image: url('Image/night1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+body{
+    background-image: url('Image/Atlantis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+
+@media screen and (max-width: 1100px){
+    body, 
+    body.night-mode{
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width:790px){
+    .menu{
+        padding:5px;
+    }
+
+    .menu a{
+        font-size: 12px;
+    }
+    .menu-icon{font-size: 12px;}
+
+    .custom-select select{
+        visibility: hidden;
+    }
+    header img{
+        height: 50px;
+        width:90px ;
+    }
+    li img{
+        height: 5px;
+        width: 10px;
+    }
+
+}

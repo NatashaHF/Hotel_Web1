@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(115, 189, 192);
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: white;
+}
+
+header img{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    height: 80px;
+    width:193px ;
+}
+
+li img{
+    height: 15px;
+    width: 20px;
+}
+
+ul li{
+    display: inline;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    margin-top: 45px;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.menu a{
+    padding: 40px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+span > a{
+	background-image: linear-gradient(to bottom,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 1) 53%,
+		rgba(255, 255, 255, 0) 53%
+	);
+    background-size: 0% 95%;
+    background-clip: content-box;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+}
+    
+span:hover> a {
+	background-size: 100% 95%;
+}
+
+/* Body */
+.page-center{
+    margin: 10%;
+}
+
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color:black;
+    text-transform: uppercase;
+
+}
+
+h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:black;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color:black;
+}
+
+
+/* Footer */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+    height: 80px;
+}
+
+
+.footer a{
+    float: right;
+    margin-top: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none;
+}
+
+
+
+@media screen and ( max-width: 880px){
+    .menu{
+        margin-top:10px;
+    }
+    .menu li{
+        padding-bottom: 3px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
+

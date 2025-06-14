@@ -1,0 +1,433 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header{
+    background-color: rgb(115, 189, 192);
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: white;
+}
+
+header img{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    height: 80px;
+    width:193px ;
+}
+
+li img{
+    height: 15px;
+    width: 20px;
+}
+
+ul li{
+    display: inline;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    margin-top: 45px;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.menu a{
+    padding: 40px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+span > a{
+	background-image: linear-gradient(to bottom,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 1) 53%,
+		rgba(255, 255, 255, 0) 53%
+	);
+    background-size: 0% 95%;
+    background-clip: content-box;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+}
+    
+span:hover> a {
+	background-size: 100% 95%;
+}
+
+/* Section 1 */
+
+#top {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 2;
+}
+
+
+h3{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    bottom: 3.75em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+section > span{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 4em;
+    background-color:white;
+}
+
+/* Section 2*/
+
+.booking{
+    margin: 10%;
+    padding:2em;
+    /*border: gray 1px solid;*/
+    background-image: linear-gradient(to bottom right,  rgb(6, 163, 168), rgb(175, 223, 241));
+}
+
+.container{
+    width:50%;
+}
+
+.input-pack{
+    margin-bottom: 1.5em;
+}
+
+.input-label{
+    display: block;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.input-text, .options{
+    margin-left: 2.3em;
+    border: none;
+    width: 80%;
+    height: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: gray;
+
+}
+
+.input-btn{
+    border: none;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:rgb(77, 9, 167) ;
+    color: white;
+    width:50px;
+    cursor: pointer;
+}
+
+.input-btn:hover{
+    background-color: lightcoral;
+}
+
+.popup-overlay {
+    visibility: hidden;
+    position: absolute;
+    background:white;
+    width: 30%;
+    height: 30%;
+    top: calc(50% - 15%); 
+    left: calc(50% - 15%); 
+    z-index: 2;
+}
+  
+.popup-overlay.active {
+    visibility: visible;
+    text-align: center;
+}
+  
+.popup-content {
+    visibility: hidden;
+}
+  
+.popup-content.active {
+    visibility: visible;
+}
+  
+.popup-content > h1{
+    margin-top: 2em;
+    font-size: 30px;
+}
+
+.popup-content > p{
+    margin-top: 2px;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+button {
+    display: inline-block;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: .20rem;
+    font-size: 20px;
+    color: white;
+    background: rgb(12, 204, 12);
+}
+  
+button:hover {
+    background: gray;
+    color: white;
+}
+  
+/* Section 3 */
+
+.container-right{
+    float: right;
+    width: 50%;
+    margin: 1em;
+}
+
+.frame{
+    margin: 0.5em;
+    background-color: gray;
+}
+
+.frame > img{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 70%;
+    height: 35%;
+}
+
+.frame > h2{
+    float: right;
+    margin: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    color: white;
+}
+
+.frame >p{
+    float: right;
+    margin: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-align: end;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+}
+
+
+.footer a{
+    position: relative;
+    left: 10em;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none;
+}
+
+/* Newsletter */
+
+.Newsletter{
+    margin-left: 15em;
+    display: inline;
+}
+
+
+.Newsletter >label{
+    padding: 1.2em;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    height: 23px;
+}
+
+.container1 {
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+.container1 > input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+.container1 > input[type=submit] {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    text-transform:uppercase;
+}
+  
+.container1 > input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.link{
+    display: inline;
+}
+
+.social img{
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width:538px){
+    .Newsletter{
+        margin-top: 1.5em;
+    }
+
+    .Newsletter>label{
+        padding-left:0;
+    }
+
+}
+
+@media screen and (max-width: 706px){
+    .container1>input[type=text], .container1>input[type=submit]{
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .frame >h2{
+        font-size: 10px;
+    }
+
+    .frame >p{
+        font-size: 15px;
+    }
+}
+
+@media screen and ( max-width: 880px){
+    .menu{
+        margin-top:10px;
+    }
+    .menu li{
+        padding-bottom: 3px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
+
+@media screen and(max-width: 960px){
+
+    .Newsletter{
+        display: block;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .Newsletter>label{
+        display: block;
+
+    }
+
+    .container1> input[type=text], .container1>input[type=submit]{
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .Newsletter{
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .container-right{
+        width: 100%;
+    }
+
+    .container{
+        display: inline-block;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .footer a{
+        left:2em;
+        font-size: 15px;
+    }
+
+    footer>label{
+        font-size: 15px;
+    }
+
+    .social img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .container1>input[type=text], .container1 >input[type=submit]{
+        padding: 5px;
+        width:100%;
+    }
+}

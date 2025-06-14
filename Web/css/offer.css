@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(115, 189, 192); 
+    z-index: 8;
+}
+
+header img{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    height: 80px;
+    width:193px ;
+}
+
+
+li img{
+    height: 15px;
+    width: 20px;
+}
+
+ul li{
+    display: inline;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+
+.menu {
+    display: flex;
+    margin-top: 30px;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.menu a{
+    padding: 40px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+span > a{
+	background-image: linear-gradient(to bottom,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 1) 53%,
+		rgba(255, 255, 255, 0) 53%
+	);
+    background-size: 0% 95%;
+    background-clip: content-box;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+}
+    
+span:hover> a {
+	background-size: 100% 95%;
+}
+
+ul li.current a{
+    text-decoration: line-through;
+}
+
+.button a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0.2em 0.5em;
+	border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.button a:hover {
+	background-color: rgb(247, 150, 166);
+    color: white;
+    border-color: white;
+	transition: color 0.5s ease-in-out,
+	            background-color 1s ease-out;
+}
+
+.button a:active {
+	transform: scale(0.9);
+}
+
+/* Section 1 */
+
+.top {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 2;
+}
+
+section img{
+    width: 600px;
+    height: 480px;
+    margin: 30px;
+}
+
+h3{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    bottom: 3.75em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+section > span{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 4em;
+    background-color: white;
+}
+
+/* Section 2 */
+
+.page-section {
+    margin-left: 6%;
+    margin-right: 6%;
+    
+}
+
+.page-center{
+    display:flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}
+
+.description{
+    width:40%;
+    float:left;
+    margin-top: 40px;
+    margin-left: 5em;
+   
+}
+
+.description > h1{
+    margin-top: 4em;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color:black;
+    margin-right: 0;
+
+}
+
+.description >p{
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:rgb(95, 89, 89);
+    margin-right: 0;
+}
+
+.right, .right1{
+    float: right;
+    width: 45%;
+}
+
+.right1 >h1{
+    margin-top: 6em;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color:black;
+    margin-left: 0;
+}
+
+.right1 > p{
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:rgb(95, 89, 89);
+    margin-left: 0;
+    width: 90%;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+}
+
+
+.footer a{
+    position: relative;
+    left: 10em;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none;
+}
+
+
+/* Newsletter */
+
+.Newsletter{
+    margin-left: 15em;
+    display: inline;
+}
+
+label{
+    padding: 1.2em;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    height: 23px;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    text-transform:uppercase;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.link{
+    display: inline;
+}
+
+.social img{
+
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width:538px){
+    .Newsletter{
+        margin-top: 1.5em;
+    }
+
+    label{
+        padding-left:0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .right >img{
+        width: 400px;
+        height: 320px;
+    }
+
+    .page-center >img{
+        width: 400px;
+        height: 320px;
+
+    }
+}
+
+@media screen and (max-width: 706px){
+    input[type=text], input[type=submit]{
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and ( max-width: 880px){
+    .menu{
+        margin-top:10px;
+    }
+    .menu li{
+        padding-bottom: 3px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
+
+@media screen and(max-width: 960px){
+
+    .Newsletter{
+        display: block;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    label{
+        display: block;
+
+    }
+
+    input[type=text], input[type=submit]{
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .page-center{
+        align-items: center;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+
+    .description{
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 3em;
+        width:100%;
+    }
+
+    .description .right{
+        display: inline-block;
+        overflow: hidden;
+    } 
+
+
+    .right, .right1{
+        width:100%;
+        position:center;
+        flex-wrap: wrap;
+    }
+
+
+    .right >img{
+        display: block;
+        margin:2em;
+    }
+
+   .right1 > h1{
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
+    .right1 > p{
+        margin-bottom: 5em;
+        margin-left: 3.5em;
+    }
+
+    .Newsletter{
+        margin-left: 2em;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .footer a{
+        left:2em;
+        font-size: 15px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    .social img{
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type=text], input[type=submit]{
+        padding: 5px;
+        width:100%;
+    }
+}
+
+
